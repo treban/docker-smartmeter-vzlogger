@@ -17,7 +17,7 @@ RUN apt-get -y install sudo build-essential git-core cmake pkg-config subversion
 RUN mkdir /cfg && cd /tmp && \
     git clone https://github.com/treban/vzlogger.git && \
     cd vzlogger && \
-    sh ./install.sh
+    bash ./install.sh
 
 ####### volume #######
 VOLUME ["/cfg"]
