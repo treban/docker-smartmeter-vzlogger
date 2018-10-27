@@ -4,7 +4,7 @@
 ##################################################################
 
 # base image
-FROM armhf/debian:stable
+FROM arm32v7/debian:stable
 
 LABEL Description="vzlogger docker image" Maintainer="trebankosta@gmail.com" Version="0.1"
 
