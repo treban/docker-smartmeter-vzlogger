@@ -1,5 +1,7 @@
 ## vzlogger docker image
 
+this image is a i386 image
+
 ### Pull the image
 
 docker pull treban/smartmeter-vzlogger
