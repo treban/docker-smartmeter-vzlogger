@@ -4,11 +4,11 @@
 ##################################################################
 
 # base image
-FROM arm32v7/debian:stable
+FROM treban/arm-ubuntu-qemu
 
 LABEL Description="vzlogger docker image" Maintainer="trebankosta@gmail.com" Version="0.1"
 
-RUN apt-get update && apt-get -y upgrade
+RUN apt update && apt-get -y upgrade
 RUN apt-get -y install sudo build-essential git-core cmake pkg-config subversion  \
     libcurl4-openssl-dev libgnutls28-dev libsasl2-dev uuid-dev \
     libtool libssl-dev libgcrypt20-dev libmicrohttpd-dev libltdl-dev \
